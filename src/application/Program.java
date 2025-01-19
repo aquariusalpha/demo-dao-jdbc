@@ -39,7 +39,15 @@ public class Program {
 
 		System.out.println("Inserted newSeller Id " + newSeller.getId());
 	
-	}
+
+		System.out.println("=== TESTE 5 UPDATE ===");
+		Seller sellerupd = sellerDao.findById(1);
+
+		sellerupd.setName("Nome Alterado");
+		sellerDao.update(sellerupd);
+
+		System.out.println("Update completed");
+}
 
 	
 
